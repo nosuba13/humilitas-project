@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="gl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,44 +7,79 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🔘 Language toggle -->
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="gl">GL</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
   <header class="hero">
     <div class="overlay"></div>
     <div class="hero-text">
       <h1>Humilitas</h1>
-      <p>pegado á terra</p>
+      <p data-key="subtitle">pegado á terra</p>
     </div>
   </header>
 
   <main>
     <section class="about">
-      <h2>Declaración de intencións</h2>
+      <h2 data-key="intentions-title">Declaración de intencións</h2>
       <div>
-      	<p><b>Humilitas</b> é un proxecto que busca superar a visión de que o ser humano se atopa separado da natureza e é alleo a ela. A través de metáforas visuais e o recoñecemento de patróns comúns trata de recordarnos o noso profundo parentesco co resto de seres vivos, que ao igual que nós, moldean o mundo dacordo coas súas preferencias para facelo menos hostil. Promove así unha mirada disruptiva, non atropocéntrica, desafíando os construtos de dominancia que deron forma á sociedade occidental, e fainos replantexarnos a nosa relación coa natureza.</p>
-	<p>Unha dose de humildade —máis necesaria que nunca— que toma o seu título dunha palabra latina, que orixinalmente significaba pegado á terra, e de cuxa mesma raíz deriva tamén o concepto de ser <i>“humano”</i>.</p>
+        <p data-key="intentions-1">
+          <b>Humilitas</b> é un proxecto que busca superar a visión de que o ser humano se atopa separado da natureza e é alleo a ela. 
+          A través de metáforas visuais e o recoñecemento de patróns comúns trata de recordarnos o noso profundo parentesco co resto de seres vivos, 
+          que ao igual que nós, moldean o mundo dacordo coas súas preferencias para facelo menos hostil. 
+          Promove así unha mirada disruptiva, non atropocéntrica, desafíando os construtos de dominancia que deron forma á sociedade occidental, 
+          e fainos replantexarnos a nosa relación coa natureza.
+        </p>
+        <p data-key="intentions-2">
+          Unha dose de humildade —máis necesaria que nunca— que toma o seu título dunha palabra latina, que orixinalmente significaba pegado á terra, 
+          e de cuxa mesma raíz deriva tamén o concepto de ser <i>“humano”</i>.
+        </p>
       </div>
     </section>
     
     <section class="gallery">
       <div class="grid">
-        <img src="images/overview.png" />
+        <img src="images/overview.png" alt="Vista xeral do proxecto" />
       </div>
     </section>
 
     <section class="contact">
-      <h2>Contacto</h2>
       
-      <a href="https://forms.gle/6HK8BaG1wCGjTXY28" class="btn">Consegue o teu exemplar!</a>
-      
-      <a href="mailto:tuemail@example.com" class="btn">Enviar correo</a>
-      
-      <br>
-      <p>Se queres saber máis ou colaborar, podes escribirme a: <a href="mailto:suarezbarronoel@gmail.com">suarezbarronoel@gmail.com</a></p>
+      <a href="https://forms.gle/6HK8BaG1wCGjTXY28" class="btn" data-key="cta">Consegue o teu exemplar!</a>
     </section>
+    <section class="contact">
+      <p data-key="contact-text">
+        <br>Se queres saber máis ou colaborar, podes escribirme a:</p>
+        <a href="mailto:suarezbarronoel@gmail.com" class="link"> suarezbarronoel@gmail.com</a>
+    </section>
+    
+    <div class="social-links">
+				<!-- LinkedIn -->
+				<a href="https://www.linkedin.com/in/noel-suarez-barro/" target="_blank" aria-label="LinkedIn">
+				<img src="images/linkedin.svg" class="icon" />
+				</a>
+
+				<!-- Bluesky -->
+				<a href="https://bsky.app/profile/nosuba.bsky.social" target="_blank" aria-label="Bluesky">
+				 <img src="images/bluesky.svg" class="icon" />
+
+				</a>
+
+				<!-- Instagram -->
+				<a href="https://www.instagram.com/nosubalapersiana/" target="_blank" aria-label="Instagram">
+					<img src="images/instagram.svg" class="icon" />
+				</a>
+		</div>
   </main>
 
-  <footer>
-    <p>© 2025 — Humilitas | Creado con 💚 e respeto polo planeta</p>
-  </footer>
+<footer>
+  <p data-key="footer">© 2025 — Humilitas | Creado con 💚 e respeto polo planeta</p>
+</footer>
+
+  <script src="lang.js"></script>
 </body>
 </html>
 

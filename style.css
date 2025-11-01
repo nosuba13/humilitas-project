@@ -7,6 +7,38 @@ body {
   background-color: #fdfcfb;
 }
 
+/* 🌍 Language toggle */
+.lang-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+.lang-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  background: rgba(255,255,255,0.4);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: transparent;
+}
+
+.lang-btn.active {
+  background: #2e7d32;
+  border-color: #2e7d32;
+}
+
 header.hero {
   position: relative;
   height: 50vh;
@@ -53,24 +85,22 @@ section {
 }
 
 .gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .gallery img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
 }
 
 .contact {
   text-align: center;
+}
+
+.contact .link {
+  color: #2e7d32
 }
 
 .btn {
@@ -80,6 +110,8 @@ section {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  margin: 0.5em;
+  display: inline-block;
   transition: background 0.3s ease;
 }
 
@@ -88,10 +120,32 @@ section {
 }
 
 footer {
-  background-color: #f1f1f1;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  background-color: #f6f6f6;
+  color: #333;
   font-size: 0.9rem;
-  color: #555;
 }
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.icon {
+  width: 28px;
+  transition: filter 0.3s ease;
+}
+
+.icon:hover {
+  stroke: #43a047;              /* tono más brillante */
+  filter: drop-shadow(0 0 4px #a5d6a7);  /* brillo sutil */
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+
+
 
