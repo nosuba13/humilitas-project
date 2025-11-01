@@ -9,8 +9,8 @@ body {
 
 header.hero {
   position: relative;
-  height: 80vh;
-  background: url('images/portada.jpg') center/cover no-repeat;
+  height: 50vh;
+  background: url('images/cover.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
